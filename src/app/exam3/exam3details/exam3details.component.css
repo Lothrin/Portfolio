@@ -1,0 +1,90 @@
+body {
+  background-image: url("/ex3-images/store.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+}
+.ins {
+  border: 3px inset rgba(0, 0, 0, 0.304);
+}
+.nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.475);
+
+  p,
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+  }
+}
+
+.head {
+  margin-top: 2%;
+  flex-direction: column;
+
+  i {
+    font-size: 2rem;
+  }
+  p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1.3rem;
+    padding-top: 2px;
+  }
+}
+.all-nav {
+  background: linear-gradient(
+    135deg,
+    rgba(173, 216, 230, 0.8),
+    rgba(72, 209, 204, 0.8)
+  );
+  padding-top: 1rem;
+  border-bottom: 5px solid rgba(125, 173, 220, 0.346);
+}
+
+.fttr {
+  background: linear-gradient(
+    135deg,
+    rgba(173, 216, 230, 0.8),
+    rgba(72, 209, 204, 0.8)
+  );
+}
+
+.nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.475);
+
+  p,
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+  }
+}
+
+.head {
+  margin-top: 2%;
+  flex-direction: column;
+
+  i {
+    font-size: 2rem;
+  }
+  p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1.3rem;
+    padding-top: 2px;
+  }
+}
+.all-nav {
+  background: linear-gradient(
+    135deg,
+    rgba(173, 216, 230, 0.8),
+    rgba(72, 209, 204, 0.8)
+  );
+  padding-top: 1rem;
+  border-bottom: 5px solid rgba(125, 173, 220, 0.346);
+}

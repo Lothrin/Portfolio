@@ -1,0 +1,108 @@
+<div class="all-nav">
+  <div class="head text-center d-flex">
+    <i class="fa-solid fa-shop"></i>
+    <p>FAMAZON</p>
+  </div>
+  <div class="nav d-flex justify-content-center text-center">
+    <a routerLink="/exam3">Home</a>
+    <p>|</p>
+    <a routerLink="/ex3products">Products</a>
+    <p>|</p>
+    <a routerLink="/ex3cart">Cart</a>
+    <p>|</p>
+    <a routerLink="/ex3about">About</a>
+    <p>|</p>
+    <a routerLink="/ex3contact">Contact</a>
+  </div>
+</div>
+<body>
+  <div class="container">
+    <div class="ins card my-5" style="width: 100%">
+      <img [src]="product.image" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ product.type }}</li>
+        <li class="list-group-item">{{ product.price | currency : "EUR" }}</li>
+      </ul>
+      <div class="card-body">
+        <a
+          routerLink="/products"
+          class="card-link"
+          style="text-decoration: none"
+          >Go Back</a
+        ><button
+          (click)="addToCart()"
+          type="button"
+          class="btn btn-success mx-3"
+          style="text-decoration: none"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<footer class="fttr text-center text-white">
+  <div class="p-2">
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+
+    <section class="">
+      <form action="">
+        <div class="row d-flex justify-content-center">
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-12">
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="">
+      <div class="row"></div>
+    </section>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <p>© 2024 Copyright: Mustafa Erkam Arafat</p>
+  </div>
+</footer>

@@ -1,0 +1,19 @@
+<div class="navbar-wrapper">
+  <div
+    class="navbar"
+    (mouseenter)="navbarExpanded = true"
+    (mouseleave)="navbarExpanded = false"
+    [class.expand]="navbarExpanded"
+  >
+    <span class="navbar-trigger"
+      ><i class="fa-solid fa-list px-2" style="color: #339c53"></i
+    ></span>
+    <div class="navbar-links" *ngIf="navbarExpanded">
+      <a routerLink="/home">Home</a>
+      <a routerLink="/exam1">First Exam</a>
+      <a></a>
+      <a routerLink="/exam2">Second Exam</a>
+      <a routerLink="/exam3">Third Exam</a>
+    </div>
+  </div>
+</div>

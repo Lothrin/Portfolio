@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  font-size: 1.3rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:visited {
+  color: black;
+}
+
+body {
+  background-color: rgba(238, 210, 199, 0.668);
+}
+header {
+  display: grid;
+
+  grid-template-columns: 1fr fit-content(100%) fit-content(100%) fit-content(
+      100%
+    );
+  gap: 2%;
+  margin: 0%;
+  padding: 0.7%;
+
+  h4 {
+    align-self: center;
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-family: Dancing Script;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.navtop {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 0.5%;
+  font-weight: 600;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(10%, 35%);
+  margin: 5% 10%;
+  gap: 2%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* The recipe of the month page -start */
+.content2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-areas:
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "hero hero hero hero"
+    "dif dif rat rat"
+    "ing dir dir dir"
+    "dishinfo dishinfo dishinfo dishinfo"
+    "comment comment newsletter newsletter";
+
+  margin: 5% 10%;
+  text-align: center;
+
+  ol {
+    text-align: start;
+    padding: 4%;
+    line-height: 2em;
+  }
+  li {
+    list-style-position: inside;
+  }
+  ul li {
+    text-align: left;
+    padding: 1.5%;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border: 0.3rem outset black;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.379);
+  }
+  h2 {
+    margin-top: 0.5em;
+    border-top: 1px solid black;
+    padding: 0.5em;
+  }
+  article {
+    padding: 2em;
+  }
+  textarea {
+    width: 100%;
+  }
+  .textarea {
+    width: 30vw;
+    height: 30vh;
+  }
+  .form {
+    text-align: center;
+  }
+  .collabel {
+    font-weight: 500;
+    width: 100%;
+  }
+  input {
+    margin-right: 10%;
+    float: right;
+  }
+  button {
+    border: 0.5px solid rgba(45, 45, 45, 0.463);
+    margin-right: 30%;
+    float: right;
+    width: 6em;
+    background-color: rgba(45, 45, 45, 0.463);
+    color: white;
+  }
+  .sub2 {
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 6em;
+    background-color: rgba(45, 45, 45, 0.463);
+    color: white;
+  }
+  button:hover {
+    border: 2.5px outset rgba(45, 45, 45, 0.463);
+  }
+  button:active {
+    border: 2.5px inset rgba(45, 45, 45, 0.463);
+  }
+}
+.hero {
+  grid-area: hero;
+}
+.dif {
+  grid-area: dif;
+  color: white;
+  background-color: rgb(54, 52, 52);
+  border: 0.3rem outset black;
+}
+.rat {
+  grid-area: rat;
+  color: white;
+  background-color: rgb(54, 52, 52);
+  border: 0.3rem outset black;
+}
+.ing {
+  grid-area: ing;
+}
+.dir {
+  grid-area: dir;
+}
+.dishinfo {
+  grid-area: dishinfo;
+}
+.comment {
+  grid-area: comment;
+  margin: 8%;
+  text-align: start;
+  textarea {
+    width: 100%;
+    height: 100%;
+  }
+}
+.newsletter {
+  grid-area: newsletter;
+  margin: 6%;
+  padding: 10%;
+  h3 {
+    padding: 4%;
+  }
+}
+/* The recipe of the month page -end */
+
+.image {
+  position: relative;
+  border: 0.3rem outset black;
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.379);
+
+  p {
+    color: rgb(234, 185, 135);
+    padding: 4%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(66, 64, 64, 0.587);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
+.image:hover {
+  border: 0.5rem inset rgb(26, 26, 26);
+  box-shadow: none;
+}
+
+.navbot {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  justify-content: center;
+  padding: 1%;
+  margin: 0 25%;
+}
+.SM {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  margin: 0 40%;
+}
+footer {
+  color: white;
+  background-color: black;
+  a {
+    color: white;
+  }
+  p {
+    text-align: center;
+    padding-bottom: 1%;
+  }
+  a:visited {
+    color: white;
+  }
+}
+/* about page -start */
+.about {
+  .abt {
+    padding: 2% 10%;
+  }
+  main {
+    padding: 5%;
+    border-left: 2px solid rgb(37, 35, 35);
+    border-right: 2px solid rgb(37, 35, 35);
+    h1 {
+      text-align: center;
+      padding: 3%;
+    }
+    article {
+      padding: 3%;
+      background-color: rgba(255, 255, 255, 0.45);
+    }
+  }
+  * {
+    color: rgb(37, 35, 35);
+  }
+  a:visited {
+    color: rgb(37, 35, 35);
+  }
+  header {
+    margin: 0;
+  }
+  footer {
+    background-color: rgba(222, 184, 135, 0.526);
+    width: 100%;
+  }
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.6;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .content {
+    grid-template-columns: 1fr;
+    overflow-x: auto;
+  }
+  h4 {
+    text-align: end;
+    font-weight: 500;
+    font-size: smaller;
+  }
+  .navtop {
+    grid-template-columns: repeat(auto-fit, minmax(35px, min-content));
+    gap: 1em;
+    justify-content: center;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    font-weight: 200;
+    font-size: smaller;
+  }
+  footer {
+    font-weight: 200;
+    font-size: smaller;
+  }
+  .navbot {
+    grid-template-columns: repeat(auto-fit, minmax(fit-content, min-content));
+    justify-content: center;
+    gap: 0.7em;
+  }
+  .SM {
+    gap: 1em;
+  }
+  .content2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "hero"
+      "hero"
+      "dif"
+      "rat"
+      "ing"
+      "dir"
+      "dishinfo"
+      "comment"
+      "newsletter";
+  }
+}
+
+@media screen and (480px < width <= 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "hero hero"
+      "hero hero"
+      "dif dif"
+      "rat rat"
+      "ing ing"
+      "dir dir"
+      "dishinfo dishinfo"
+      "comment comment"
+      "newsletter newsletter";
+  }
+}
