@@ -1,0 +1,92 @@
+.div {
+  text-align: center;
+  background-color: #821918;
+
+  padding: 5%;
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  font-size: 18px;
+}
+
+ul {
+  gap: 22px;
+  font-size: 19px;
+}
+
+.btn {
+  background-color: #999;
+  color: white;
+  padding: 15px 8% 15px 8%;
+  font-size: 70%;
+}
+
+.names {
+  margin: 10px;
+  list-style: none;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.FooterLinks {
+  display: flex;
+  justify-content: center;
+}
+.FooterLinksParts a {
+  padding: 15px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.FooterLinksParts a:hover {
+  color: #950a0a;
+}
+hr {
+  color: white;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+#Icons {
+  display: flex;
+  justify-content: center;
+}
+#Icons a {
+  padding: 10px;
+  color: whitesmoke;
+  transition: color 0.3s ease;
+}
+#Icons a:nth-child(1):hover i {
+  color: #2626ca;
+}
+#Icons a:nth-child(2):hover i {
+  color: #1da1f2;
+}
+#Icons a:nth-child(3):hover i {
+  color: rgb(251, 238, 1);
+}
+#Icons a:nth-child(4):hover i {
+  color: #df5009a2;
+}
+#Icons a:nth-child(5):hover i {
+  color: #2d73e3;
+}
+#Icons a:nth-child(6):hover i {
+  color: #808080;
+}
+#CopyRight {
+  display: flex;
+  justify-content: center;
+}
+#CopyRight p a {
+  color: whitesmoke;
+}
+#CopyRight p a:hover {
+  color: #950a0a;
+}

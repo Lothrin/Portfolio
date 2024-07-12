@@ -1,0 +1,107 @@
+* {
+  color: rgba(255, 255, 255, 0.715);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-info {
+  padding: 0 15%;
+}
+h5 {
+  padding: 1%;
+}
+h3 {
+  text-align: center;
+  padding: 5%;
+}
+.list {
+  border-right: 2px solid #fbfdfe6a;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #4d97c8, #00254b);
+  animation: gradientAnimation 15s ease infinite;
+  z-index: -1;
+}
+
+.image {
+  margin: 10%;
+  padding: 2%;
+  height: 200px;
+  width: 150px;
+  border: 3px solid #02162483;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.107);
+}
+.cv-container {
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 800px;
+  margin: 100px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  grid-template-areas:
+    "image contact contact contact"
+    "education education skills skills"
+    "career career career career";
+}
+.image {
+  grid-area: image;
+}
+
+.contact {
+  grid-area: contact;
+}
+.education {
+  grid-area: education;
+}
+.skills {
+  grid-area: skills;
+}
+.career {
+  grid-area: career;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 75% 75%;
+  }
+
+  50% {
+    background-position: 125% 100%;
+  }
+  75% {
+    background-position: 175% 75%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}

@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand navbar">
+  <div class="container-fluid justify-content-between container mt-1">
+    <div>
+      <a class="navbar-brand" [routerLink]="['/ex4home']">
+        <img src="./ex4-images/logo.png" id="logo" alt="Logo" />
+      </a>
+    </div>
+    <ul class="navbar-nav mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle link"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Alumni
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item link" [routerLink]="['/ex4almngrad']"
+              >Graduate's List</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item link" [routerLink]="['/ex4almndef']"
+              >Definition</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item link" [routerLink]="['/ex4almnmethod']"
+              >Methods</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" [routerLink]="['/ex4stories']" role="button"
+          >Stories</a
+        >
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle link"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Career
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item link" [routerLink]="['/ex4career']"
+              >Careers</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item link" [routerLink]="['/ex4carlist']"
+              >Job Listing</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link" [routerLink]="['/ex4events']" role="button"
+          >Events</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="body">
+  <div class="content">
+    <h1 class="mt-5 d-flex justify-content-center team">CODE FACTORY</h1>
+    <h1 class="mb-3 d-flex justify-content-center title">
+      BECOME A JOB-READY WEB DEVELOPER
+    </h1>
+  </div>
+</div>

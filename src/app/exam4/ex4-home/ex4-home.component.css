@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i");
+* {
+  font-family: "Agency FB", arial !important;
+}
+.body {
+  background-image: url(https://codefactory.wien/wp-content/uploads/2020/03/White-1.jpg);
+  background-repeat: repeat;
+  background-position: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.plate {
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.111);
+  background-color: white;
+}
+
+.apostroph {
+  color: #999;
+  font-size: 30px;
+}
+
+.apostroph2 {
+  color: #999;
+  margin-left: 250px;
+  font-size: 30px;
+}
+
+body {
+  font-family: "Agency FB", arial !important;
+  background: #ddd;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.title {
+  font-size: 200%;
+  font-family: "Agency FB", arial !important;
+  color: #950a0a;
+}
+
+.container .info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Agency FB", arial !important;
+}
+.container h3.statement {
+  font-family: "Agency FB", arial !important;
+  text-align: center;
+  color: #3c4858;
+}
+
+.carousel-item {
+  border-radius: 6px;
+  transition: transform 0.1s ease, opacity 0.5s ease-out;
+  .pic {
+    width: 100%;
+    border-radius: 3px;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3vh 8vw;
+  background: #950a0a;
+  color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 3px;
+  transition: all 0.05s ease-in-out;
+}
+
+.title:hover {
+  background: #999;
+}
+
+.shell {
+  padding: 80px 0;
+}
+.wsk-cp-product {
+  font-size: 150%;
+  font-family: "Agency FB", arial !important;
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+  margin: 20px auto;
+}
+.wsk-cp-img {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  -khtml-transform: translate(-50%);
+  width: 100%;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.wsk-cp-img img {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+}
+
+.wsk-cp-product:hover .wsk-cp-img {
+  top: -40px;
+}
+.wsk-cp-product:hover .wsk-cp-img img {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.wsk-cp-text {
+  padding-top: 93%;
+}
+.wsk-cp-text .category {
+  font-family: "Agency FB", arial !important;
+  text-align: center;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 45px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.wsk-cp-text .category > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -khtml-transform: translate(-50%, -50%);
+}
+.wsk-cp-text .category > span {
+  padding: 12px 30px;
+  border: 1px solid #313131;
+  background: #999;
+  color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 3px;
+  transition: all 0.05s ease-in-out;
+}
+.wsk-cp-product:hover .wsk-cp-text .category > span {
+  border-color: #ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+.wsk-cp-product:hover .wsk-cp-text .category {
+  margin-top: 0px;
+}
+.wsk-cp-text .title-product {
+  text-align: center;
+}
+.wsk-cp-text .title-product h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.wsk-cp-text .description-prod p {
+  margin: 0;
+}
+/* Truncate */
+.wsk-cp-text .description-prod {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  margin-bottom: 15px;
+}
+
+.description-prod {
+  font-size: 20px;
+  color: #4caf50;
+}
+
+.card-footer {
+  padding: 25px 0 5px;
+  border-top: 1px solid #ddd;
+}
+.card-footer:after,
+.card-footer:before {
+  content: "";
+  display: table;
+}
+.card-footer:after {
+  clear: both;
+}
+
+.card-footer .wcf-left {
+  float: left;
+}
+
+.card-footer .wcf-right {
+  float: right;
+}
+
+.discover {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a.buy-btn {
+  display: block;
+  color: #212121;
+  text-align: center;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 1px solid #212121;
+  transition: all 0.2s ease-in-out;
+}
+a.buy-btn:hover,
+a.buy-btn:active,
+a.buy-btn:focus {
+  border-color: #950a0a;
+  background: #950a0a;
+  color: #fff;
+  text-decoration: none;
+}
+.wsk-btn {
+  display: inline-block;
+  color: #212121;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  border-color: #999;
+  background: #999;
+  padding: 12px 30px;
+  border-radius: 27px;
+  margin: 0 5px;
+}
+
+h2 {
+  color: #3c4858;
+}
+
+.wsk-btn:hover,
+.wsk-btn:focus,
+.wsk-btn:active {
+  text-decoration: none;
+  color: #fff;
+}
+.red {
+  color: #f44336;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0 5px;
+}
+@media screen and (max-width: 991px) {
+  .wsk-cp-product {
+    margin: 40px auto;
+  }
+  .wsk-cp-product .wsk-cp-img {
+    top: -40px;
+  }
+  .wsk-cp-product .wsk-cp-img img {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  .wsk-cp-product .wsk-cp-text .category > span {
+    border-color: #ddd;
+    box-shadow: none;
+    padding: 11px 28px;
+  }
+  .wsk-cp-product .wsk-cp-text .category {
+    margin-top: 0px;
+  }
+  a.buy-btn {
+    border-color: #999;
+    background: #999;
+    color: #fff;
+  }
+}

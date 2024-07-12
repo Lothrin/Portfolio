@@ -11,6 +11,18 @@ import { Exam3cartComponent } from './exam3/exam3cart/exam3cart.component';
 import { Exam3contactComponent } from './exam3/exam3contact/exam3contact.component';
 import { Exam3detailsComponent } from './exam3/exam3details/exam3details.component';
 import { Exam3productsComponent } from './exam3/exam3products/exam3products.component';
+import { CVComponent } from './cv/cv.component';
+import { Ex4HomeComponent } from './exam4/ex4-home/ex4-home.component';
+import { Ex4AlmnDefComponent } from './exam4/ex4-almn-def/ex4-almn-def.component';
+import { Ex4AlmnGradComponent } from './exam4/ex4-almn-grad/ex4-almn-grad.component';
+import { Ex4CarListComponent } from './exam4/ex4-car-list/ex4-car-list.component';
+import { Ex4CareerComponent } from './exam4/ex4-career/ex4-career.component';
+import { Ex4EventsComponent } from './exam4/ex4-events/ex4-events.component';
+import { Ex4InterDetComponent } from './exam4/ex4-inter-det/ex4-inter-det.component';
+import { Ex4StoriesComponent } from './exam4/ex4-stories/ex4-stories.component';
+import { Ex4StoryDetComponent } from './exam4/ex4-story-det/ex4-story-det.component';
+import { Ex4AlmnMethodComponent } from './exam4/ex4-almn-method/ex4-almn-method.component';
+
 
 
 const routes: Routes = [
@@ -40,6 +52,31 @@ const routes: Routes = [
   }, {
     path: 'ex3products', component: Exam3productsComponent
   },
+  {
+    path: 'ex4home', component: Ex4HomeComponent
+  },{
+  path: 'ex4almndef', component: Ex4AlmnDefComponent
+  },{
+    path: 'ex4almngrad', component: Ex4AlmnGradComponent
+  },{
+    path: 'ex4almnmethod', component: Ex4AlmnMethodComponent
+  },
+  {
+    path: 'ex4carlist', component: Ex4CarListComponent
+  }, {
+    path: 'ex4career', component: Ex4CareerComponent
+  },{
+    path: 'ex4events', component: Ex4EventsComponent
+  }, {
+    path: 'ex4interview/:id2', component: Ex4InterDetComponent
+  },{
+    path: 'ex4stories', component: Ex4StoriesComponent
+  }, {
+    path: 'ex4stories/:id', component: Ex4StoryDetComponent
+  },
+
+
+  { path: 'cv', component: CVComponent},
   {
     path: '**', redirectTo: '/home'
   }
