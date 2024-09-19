@@ -127,11 +127,7 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
   float: right;
   text-align: left;
 }
-/* .timeline_content h4 {
-      font-size: 22px;
-      font-weight: 600;
-      margin: 10px 0;
-    } */
+
 ul.timeline-list li:before {
   position: absolute;
   content: "";
@@ -144,12 +140,7 @@ ul.timeline-list li:before {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-/* .timeline_content span {
-      font-size: 18px;
-      font-weight: 500;
-      font-family: poppins;
-      color: #FF3636;
-    } */
+
 .row {
   margin: 5%;
 }

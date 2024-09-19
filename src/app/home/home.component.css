@@ -6,7 +6,10 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: auto;
+  /* overflow: auto; */
+}
+a {
+  text-decoration: none;
 }
 .background {
   position: absolute;
@@ -14,22 +17,21 @@ html {
   left: 0;
   width: 100%;
   height: auto;
-  background: linear-gradient(to bottom, #4d97c8, #00254b);
+  background: linear-gradient(to bottom, #2e6d97, #000a13);
   animation: gradientAnimation 15s ease infinite;
   z-index: -1;
 }
 
 h1 {
   font-size: 3em;
-  margin: 0;
 }
 .date {
   color: #08ef77a7;
 }
 h5 a {
   text-decoration: none;
-  color: #00bfff; /* Light blue color */
-  text-shadow: 0 0 3px #00bfff, /* Subtle glow effect */ 0 0 6px #00bfff;
+  color: #00bfff;
+  text-shadow: 0 0 3px #00bfff, 0 0 6px #00bfff;
 }
 
 @keyframes gradientAnimation {
@@ -118,8 +120,9 @@ h5 a {
 .hr1 {
   margin-top: 20px;
 }
-
+/* Updated .image Class with Shine Effect */
 .image {
+  position: relative;
   margin: 10%;
   padding: 2%;
   height: 200px;
@@ -128,6 +131,37 @@ h5 a {
   border-radius: 15px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.107);
+  overflow: hidden;
+}
+
+.image::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  translate: (-25%, -25%);
+  width: 600px;
+  height: 800px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    rgb(255, 255, 255),
+    transparent 50%,
+    rgb(0, 201, 251),
+    transparent 100%
+  );
+  animation: shine-rotate 15s linear infinite;
+}
+
+@keyframes shine-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .image img {
@@ -135,9 +169,12 @@ h5 a {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.374);
+  z-index: 10;
 }
 
 .photo {
+  margin-top: 10%;
   display: flex;
   justify-content: flex-end;
   grid-area: photo;
@@ -165,16 +202,19 @@ ul {
   font-family: "Arial", sans-serif;
   font-size: 50px;
   color: white;
-  animation: neonFlicker 10s forwards;
+  animation: neonFlicker 5s forwards;
 }
 .flck {
-  animation: neonFlicker1 10s forwards;
+  animation: neonFlicker1 5s forwards;
 }
 
 @keyframes neonFlicker {
   0% {
     text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0ff,
       0 0 20px #0ff;
+  }
+  10% {
+    text-shadow: none;
   }
   25% {
     text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 15px #fff, 0 0 25px #0ff,
@@ -184,6 +224,7 @@ ul {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0ff,
       0 0 40px #0ff;
   }
+
   60% {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0ff,
       0 0 40px #0ff;
@@ -259,6 +300,7 @@ ul {
 .course-content {
   padding-left: 10%;
   padding-right: 10%;
+  width: 100%;
   grid-area: course-content;
 }
 .list {
@@ -286,15 +328,31 @@ ul {
   .content {
     grid-template-columns: 1fr;
     overflow-x: auto;
+    .photo {
+      justify-content: center;
+    }
+    .paragraph {
+      padding: 0% 10%;
+    }
 
+    article {
+      text-align: start;
+    }
     grid-template-areas:
       "greeting "
       "name"
+      "photo"
+      "paragraph"
       "timeline"
       "course-content"
+      "projects"
       "exam1"
       "exam2"
-      "exam3";
+      "exam3"
+      "exam4";
+  }
+  .exam3 {
+    padding: 0%;
   }
 }
 
@@ -304,10 +362,16 @@ ul {
     grid-template-areas:
       "greeting greeting "
       "name name"
+      "photo paragraph"
       "timeline timeline"
       "course-content course-content"
+      "projects projects"
       "exam1 exam1"
       "exam2 exam2"
-      "exam3 exam3";
+      "exam3 exam3"
+      "exam4 exam4";
+  }
+  .exam3 {
+    padding: 0%;
   }
 }

@@ -4,8 +4,9 @@ body {
   background-size: auto;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 .container {
-  max-width: 100%;
+  max-width: 85%;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
@@ -26,6 +27,7 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .nav {
   border-top: 1px solid rgba(0, 0, 0, 0.475);
 
@@ -39,7 +41,9 @@ body {
 
 .head {
   margin-top: 2%;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   i {
     font-size: 2rem;
@@ -50,6 +54,7 @@ body {
     padding-top: 2px;
   }
 }
+
 .all-nav {
   background: linear-gradient(
     135deg,
@@ -66,4 +71,88 @@ body {
     rgba(173, 216, 230, 0.8),
     rgba(72, 209, 204, 0.8)
   );
+}
+
+.ctxt {
+  padding: 3%;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1024px) {
+  .content {
+    max-width: 85%;
+    padding: 15px;
+  }
+
+  .nav p,
+  .nav a {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .nav p,
+  .nav a {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .head i {
+    font-size: 1.5rem;
+  }
+
+  .head p {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .ctxt {
+    padding: 1.5%;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    max-width: 95%;
+    padding: 5px;
+  }
+
+  .nav p,
+  .nav a {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .head i {
+    font-size: 1.2rem;
+  }
+
+  .head p {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .ctxt {
+    padding: 1%;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
 }
